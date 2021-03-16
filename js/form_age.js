@@ -19,15 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
     let submit = document.getElementsByTagName("input")[2];
     submit.addEventListener("click",(e)=>{
         e.preventDefault()
-        let user_1 = Object.create(User);
-        user_1.construct(age = document.getElementById("age").value, prenom = document.getElementById("prenom").value)
-        date_nassance = date - user_1.age
+        let user = Object.create(User);
+        user.construct(age = document.getElementById("age").value, prenom = document.getElementById("prenom").value)
+        date_nassance = date - user.age
         if (!prenom && !age) {
             target.innerText = "veuillez remplir les champs"
             target_2.classList.add("warning")
         }
         else{
-            target.innerText = `${validé} bonjour ${user_1.prenom}, vous êtes né(e) en ${date_nassance}`
+            target.innerText = `${validé} bonjour ${user.prenom.toUpperCase()}, vous êtes né(e) en ${date_nassance}`
             target_2.classList.remove("warning")
             target_2.classList.add("success")
         }
