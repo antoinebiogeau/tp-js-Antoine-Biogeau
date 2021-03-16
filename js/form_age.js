@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             target_2.classList.add("warning")
         }
         else{
-            target.innerText = `${validé} bonjour ${user.prenom.toUpperCase()}, vous êtes né(e) en ${date_nassance}`
+            target.innerText = `${validé} bonjour ${user.prenom}, vous êtes né(e) en ${date_nassance}`
             target_2.classList.remove("warning")
             target_2.classList.add("success")
         }
