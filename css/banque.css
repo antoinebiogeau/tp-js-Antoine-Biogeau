@@ -1,0 +1,41 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Montserrat',sans-serif;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    margin-bottom: 5.0rem;
+}
+header h1{
+    font-weight: 200;
+    text-align: center;
+    line-height: 8.0rem;
+}
+div p{
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+div{
+    max-width: 80rem;
+    padding: 1.0rem;
+    border: solid 0.1rem transparent;
+    background-color: #fafafa;
+    margin: 0 auto 1rem;
+}
+.warning, .success{
+    text-align: center;
+    line-height: 2.5rem;
+    cursor: pointer;
+}
+.success{
+    background-color: rgb(20, 143, 200);
+}
+.warning{
+    background-color: rgb(200, 20, 20);
+}
